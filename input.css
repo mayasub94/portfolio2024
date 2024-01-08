@@ -1,7 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-inter font-light text-base;
+}
+
+.display-1 {
+  @apply font-extrabold text-8xl leading-10;
+}
+
 .w-container {
-  @apply max-w-7xl mx-auto;
+  @apply max-w-7xl mx-auto py-16;
+}
+
+.banner-list-text li {
+  @apply text-white flex items-center gap-x-2;
+}
+
+.banner {
+  @apply flex flex-col w-1/2 space-y-8;
+  & p {
+    @apply text-sm text-gray-on-black;
+  }
 }

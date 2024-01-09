@@ -26,3 +26,7 @@ body {
     @apply text-sm text-gray-on-black;
   }
 }
+
+.work-title {
+  @apply text-2xl text-gray-on-text font-semibold;
+}

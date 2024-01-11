@@ -58,3 +58,21 @@ body {
     }
   }
 }
+
+.wireframes {
+  @apply flex gap-x-10;
+
+  .img {
+    @apply w-2/3;
+
+    .sample {
+      @apply bg-gray-100 h-96;
+    }
+  }
+  & h2 {
+    @apply text-xl font-semibold;
+  }
+  & ul {
+    @apply list-outside list-disc pl-6 pt-5;
+  }
+}

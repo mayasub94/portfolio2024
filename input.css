@@ -30,3 +30,31 @@ body {
 .work-title {
   @apply text-2xl text-gray-on-text font-semibold;
 }
+
+.work-sample {
+  @apply w-full bg-white rounded p-6;
+
+  & h2 {
+    @apply font-bold;
+  }
+
+  .objective {
+    @apply font-semibold;
+  }
+
+  & ul {
+    @apply list-decimal list-inside space-y-1;
+  }
+
+  .result-grid {
+    @apply grid grid-cols-3 gap-x-6;
+
+    .div {
+      @apply bg-gray-on-bg px-10 py-7;
+
+      & span {
+        @apply font-bold;
+      }
+    }
+  }
+}

@@ -76,3 +76,15 @@ body {
     @apply list-outside list-disc pl-6 pt-5;
   }
 }
+
+.owl-work-1 {
+  .owl-dots {
+    @apply space-x-3 m-auto text-center;
+    .owl-dot {
+      @apply h-3 w-3 bg-gray-on-bg rounded-full hover:bg-m-pink-dark;
+    }
+    .active {
+      @apply bg-m-pink-light;
+    }
+  }
+}

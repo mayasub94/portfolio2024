@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maya</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -281,7 +283,13 @@
                 </div>
 
                 <!-- carousel -->
-                <div class=" h-96 bg-gray-100"></div>
+                <div class="  ">
+                    <div class="owl-carousel owl-work-1">
+                        <div><img src="https://dummyimage.com/2000x1000/eee/aaa" alt="" class="w-full"></div>
+                        <div><img src="https://dummyimage.com/2000x1000/e3e3e3/aaa" alt="" class="w-full"></div>
+                        <div><img src="https://dummyimage.com/2000x1000/efefef/aaa" alt="" class="w-full"></div>
+                    </div>
+                </div>
 
                 <!-- result -->
                 <div class=" result-grid">
@@ -436,6 +444,20 @@
             </div>
         </div>
     </div>
+
+
+    <script src="./owl/jquery.js"></script>
+    <script src="./owl//owl.carousel.min.js"></script>
+
+    <script>
+        $(".owl-work-1").owlCarousel({
+            items: 1,
+            dots: true,
+            autoplay: false,
+            autoplayTimeout: 10000,
+            loop: true,
+        });
+    </script>
 
 </body>
 

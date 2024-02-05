@@ -8,13 +8,36 @@ body {
   @apply font-inter font-light text-base;
 }
 
-.display-1 {
+.display-1, h1 {
   @apply font-extrabold text-8xl leading-10;
 }
 
-.w-container {
-  @apply max-w-7xl mx-auto py-16;
+h2 {
+  @apply font-semibold text-4xl leading-10;
 }
+
+h3 {
+  @apply font-normal text-4xl leading-8;
+}
+
+h4 {
+  @apply font-semibold text-2xl leading-7
+}
+
+h5 {
+  @apply font-semibold text-xl leading-6
+}
+
+
+
+.w-container {
+  @apply max-w-5xl mx-auto py-16;
+}
+
+.b-container {
+  @apply max-w-5xl mx-auto py-32;
+}
+
 
 .banner-list-text li {
   @apply text-white flex items-center gap-x-2;
@@ -50,7 +73,19 @@ body {
     @apply grid grid-cols-3 gap-x-6;
 
     .div {
-      @apply bg-gray-on-bg px-10 py-7;
+      @apply bg-gray-on-bg px-10 py-7 rounded-md;
+
+      & span {
+        @apply font-bold;
+      }
+    }
+  }
+
+  .result-grid-2 {
+    @apply grid grid-cols-4 gap-x-6;
+
+    .div {
+      @apply bg-gray-on-bg px-10 py-7 rounded-md;
 
       & span {
         @apply font-bold;
@@ -58,6 +93,11 @@ body {
     }
   }
 }
+
+
+
+
+
 
 .wireframes {
   @apply flex gap-x-10;
@@ -81,10 +121,10 @@ body {
   .owl-dots {
     @apply space-x-3 m-auto text-center;
     .owl-dot {
-      @apply h-3 w-3 bg-gray-on-bg rounded-full hover:bg-m-pink-dark;
+      @apply h-3 w-3 bg-gray-on-bg rounded-full hover:bg-m-orange;
     }
     .active {
-      @apply bg-m-pink-light;
+      @apply bg-m-orange;
     }
   }
 }

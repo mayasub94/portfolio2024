@@ -8,7 +8,8 @@ body {
   @apply font-inter font-light text-base;
 }
 
-.display-1, h1 {
+.display-1,
+h1 {
   @apply font-extrabold text-8xl leading-10;
 }
 
@@ -21,14 +22,12 @@ h3 {
 }
 
 h4 {
-  @apply font-semibold text-2xl leading-7
+  @apply font-semibold text-2xl leading-7;
 }
 
 h5 {
-  @apply font-semibold text-xl leading-6
+  @apply font-semibold text-xl leading-6;
 }
-
-
 
 .w-container {
   @apply max-w-5xl mx-auto py-16;
@@ -37,7 +36,6 @@ h5 {
 .b-container {
   @apply max-w-5xl mx-auto py-32;
 }
-
 
 .banner-list-text li {
   @apply text-white flex items-center gap-x-2;
@@ -94,11 +92,6 @@ h5 {
   }
 }
 
-
-
-
-
-
 .wireframes {
   @apply flex gap-x-10;
 
@@ -125,6 +118,26 @@ h5 {
     }
     .active {
       @apply bg-m-orange;
+    }
+  }
+}
+
+.owl-reels {
+  .owl-prev {
+    @apply !bg-black absolute top-1/2 w-10 h-10 left-2;
+  }
+
+  .owl-next {
+    @apply !bg-black absolute top-1/2 w-10 h-10 right-2;
+  }
+
+  .owl-dots {
+    @apply space-x-3 m-auto text-center absolute top-0 mx-auto w-full;
+    .owl-dot {
+      @apply h-2 w-16 bg-gray-on-bg rounded-full hover:bg-primary-dark;
+    }
+    .active {
+      @apply bg-primary-dark w-32;
     }
   }
 }

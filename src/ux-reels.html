@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maya</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -32,7 +36,13 @@
 
     <!-- section-2 -->
     <div class=" min-h-screen">
-
+        <div class="reels">
+            <div class=" owl-carousel owl-reels">
+                <div><img src="./images/dt1.png" alt="" class="w-full"></div>
+                <div><img src="./images/dt2.png" alt="" class="w-full"></div>
+                <div><img src="./images/dt3.png" alt="" class="w-full"></div>
+            </div>
+        </div>
 
     </div>
 
@@ -47,6 +57,19 @@
     <script src="./owl/jquery.js"></script>
     <script src="./owl/owl.carousel.min.js"></script>
     <script src="./js/app.js"></script>
+
+    <script>
+        $(".owl-reels").owlCarousel({
+            items: 1,
+            dots: true,
+            autoplay: false,
+            autoplayTimeout: 10000,
+            loop: true,
+            nav: true,
+            navText: ["<i class='fa fa-chevron-left text-white'></i>", "<i class='fa fa-chevron-right text-white'></i>"]
+
+        });
+    </script>
 
 </body>
 

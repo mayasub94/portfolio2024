@@ -10,31 +10,31 @@ body {
 
 .display-1,
 h1 {
-  @apply font-extrabold text-8xl leading-10;
+  @apply font-extrabold text-8xl leading-10 text-primary-dark;
 }
 
 h2 {
-  @apply font-semibold text-4xl leading-10;
+  @apply font-semibold text-4xl leading-10 text-primary-dark;
 }
 
 h3 {
-  @apply font-normal text-4xl leading-8;
+  @apply font-normal text-4xl leading-8 text-primary-dark;
 }
 
 h4 {
-  @apply font-semibold text-2xl leading-7;
+  @apply font-semibold text-2xl leading-7 text-primary-dark;
 }
 
 h5 {
-  @apply font-semibold text-xl leading-6;
+  @apply font-semibold text-xl leading-6 text-primary-dark;
 }
 
 .w-container {
-  @apply max-w-5xl mx-auto py-16;
+  @apply max-w-7xl mx-auto py-8 text-gray-on-text;
 }
 
 .b-container {
-  @apply max-w-5xl mx-auto py-32;
+  @apply max-w-5xl mx-auto py-32 text-gray-on-text;
 }
 
 .banner-list-text li {
@@ -49,7 +49,7 @@ h5 {
 }
 
 .work-title {
-  @apply text-2xl text-gray-on-text font-semibold;
+  @apply text-2xl text-primary-dark font-semibold;
 }
 
 .work-sample {
@@ -60,7 +60,7 @@ h5 {
   }
 
   .objective {
-    @apply font-semibold;
+    @apply font-semibold text-primary-dark;
   }
 
   & ul {
@@ -110,6 +110,18 @@ h5 {
   }
 }
 
+
+.crown-cursor {
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='68' height='82' viewport='0 0 100 100' style='fill:black;font-size:41px;'><text y='50%'>👑</text></svg>") 16 0,auto;  
+}
+
+.pause-cursor {
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='68' height='82' viewport='0 0 100 100' style='fill:black;font-size:41px;'><text y='50%'>⏸</text></svg>") 16 0,auto;  
+}
+
+
+
+
 .owl-work-1 {
   .owl-dots {
     @apply space-x-3 m-auto text-center;
@@ -132,9 +144,9 @@ h5 {
   }
 
   .owl-dots {
-    @apply space-x-3 m-auto text-center absolute top-0 mx-auto w-full;
+    @apply space-x-3 m-auto text-center absolute top-8 mx-auto w-full;
     .owl-dot {
-      @apply h-2 w-16 bg-gray-on-bg rounded-full hover:bg-primary-dark;
+      @apply h-1 w-16 bg-gray-on-bg rounded-full hover:bg-primary-dark;
     }
     .active {
       @apply bg-primary-dark w-32;

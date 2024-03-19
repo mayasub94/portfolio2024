@@ -30,11 +30,11 @@ h5 {
 }
 
 .w-container {
-  @apply max-w-7xl mx-auto py-8 text-gray-on-text;
+  @apply max-w-7xl mx-auto py-8 text-gray-on-text px-8 md:px-0;
 }
 
 .b-container {
-  @apply max-w-5xl mx-auto py-32 text-gray-on-text;
+  @apply max-w-5xl mx-auto py-16 px-8 md:px-0 md:py-32 text-gray-on-text;
 }
 
 .banner-list-text li {
@@ -42,7 +42,7 @@ h5 {
 }
 
 .banner {
-  @apply flex flex-col w-1/2 space-y-8;
+  @apply md:flex flex-col md:w-1/2 space-y-8;
   & p {
     @apply text-sm text-gray-on-black;
   }
@@ -68,7 +68,7 @@ h5 {
   }
 
   .result-grid {
-    @apply grid grid-cols-3 gap-x-6;
+    @apply grid md:grid-cols-3 grid-cols-1 gap-6;
 
     .div {
       @apply bg-gray-on-bg px-10 py-7 rounded-md;
@@ -80,7 +80,7 @@ h5 {
   }
 
   .result-grid-2 {
-    @apply grid grid-cols-4 gap-x-6;
+    @apply grid md:grid-cols-4 grid-cols-1  gap-6;
 
     .div {
       @apply bg-gray-on-bg px-10 py-7 rounded-md;
@@ -93,13 +93,13 @@ h5 {
 }
 
 .wireframes {
-  @apply flex gap-x-10;
+  @apply md:flex gap-x-10;
 
   .img {
-    @apply w-2/3;
+    @apply md:w-2/3;
 
     .sample {
-      @apply bg-gray-100 h-96;
+      @apply bg-gray-100 md:h-96;
     }
   }
   & h2 {
@@ -110,17 +110,17 @@ h5 {
   }
 }
 
-
 .crown-cursor {
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='68' height='82' viewport='0 0 100 100' style='fill:black;font-size:41px;'><text y='50%'>👑</text></svg>") 16 0,auto;  
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='68' height='82' viewport='0 0 100 100' style='fill:black;font-size:41px;'><text y='50%'>👑</text></svg>")
+      16 0,
+    auto;
 }
 
 .pause-cursor {
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='68' height='82' viewport='0 0 100 100' style='fill:black;font-size:41px;'><text y='50%'>⏸</text></svg>") 16 0,auto;  
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='68' height='82' viewport='0 0 100 100' style='fill:black;font-size:41px;'><text y='50%'>⏸</text></svg>")
+      16 0,
+    auto;
 }
-
-
-
 
 .owl-work-1 {
   .owl-dots {

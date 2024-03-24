@@ -151,7 +151,7 @@ h5 {
   }
 
   .owl-dots {
-    @apply space-x-3 m-auto text-center absolute top-8 mx-auto w-full;
+    @apply space-x-3 m-auto text-center absolute top-20 mx-auto w-full;
     .owl-dot {
       @apply h-1 w-16 bg-gray-on-bg rounded-full hover:bg-primary-dark;
     }

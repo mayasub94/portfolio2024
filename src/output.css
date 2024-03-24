@@ -604,10 +604,6 @@ video {
   bottom: 0px;
 }
 
-.bottom-8{
-  bottom: 2rem;
-}
-
 .m-auto{
   margin: auto;
 }
@@ -718,10 +714,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-6{
-  width: 1.5rem;
 }
 
 .grow{
@@ -1242,10 +1234,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-40{
-  opacity: 0.4;
 }
 
 .shadow-\[1px_1px_8px_4px_\#DFA45C\]{

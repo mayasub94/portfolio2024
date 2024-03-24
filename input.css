@@ -171,3 +171,7 @@ h5 {
     @apply text-m-orange;
   }
 }
+#pageContent,
+#errorMessage {
+  display: none;
+}

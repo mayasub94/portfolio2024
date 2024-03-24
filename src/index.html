@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maya</title>
+    <link rel="stylesheet" href="./owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
     <link href="./output.css" rel="stylesheet">
 </head>
 
@@ -83,11 +85,19 @@
                 </div>
             </div>
 
+            <div class="mx-auto w-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 text-gray-on-bg-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+                </svg>
+
+            </div>
+
         </div>
     </div>
 
     <!-- section-2 -->
-    <div class=" min-h-[80vh]">
+    <div class=" min-h-[80vh]" id="work">
         <div class=" b-container space-y-16">
             <div class="space-y-2">
                 <h2 class="text-4xl font-normal">Personal favourite Works</h2>
@@ -191,23 +201,63 @@
                         <h2 class="text-4xl text-gray-on-black font-normal">Words of delight</h2>
                         <p class="text-sm text-gray-on-black">Don’t just take my word for it.</p>
                     </div>
-                    <div class="md:w-[75%]  space-y-7">
-                        <img src="https://www.giannifavaretto.com/img/profile.png" class="rounded-full h-16 w-16"
-                            alt="">
-                        <p class=" text-gray-on-black text-sm italic">Maya took ownership of many key projects which
-                            were
-                            driven by
-                            design and made them into
-                            reality. She is a great collaborator and has leveraged her Research skills in many key
-                            projects. With Dheepak, Maya is his mentor and has helped him succeed in his everyday work.
-                            She has the trust of the team and stakeholders; With clear bandwidth issues, Maya has always
-                            made sure that team delivers.</p>
 
-                        <div>
-                            <h6 class=" text-white text-sm font-medium">Gianni Favaretto</h6>
-                            <p class=" text-gray-on-black text-xs">Director of Design & Research, Chargebee</p>
+                    <div class="owl-carousel owl-testimonial">
+                        <!-- 1 -->
+                        <div class="md:w-[75%]  space-y-7">
+
+
+                            <div class="w-16">
+                                <img src="https://placehold.co/50" class="rounded-full " alt="">
+                            </div>
+                            <p class=" text-gray-on-black text-sm italic">Maya took ownership of many key projects which
+                                were
+                                driven by
+                                design and made them into
+                                reality. She is a great collaborator and has leveraged her Research skills in many key
+                                projects. With Dheepak, Maya is his mentor and has helped him succeed in his everyday
+                                work.
+                                She has the trust of the team and stakeholders; With clear bandwidth issues, Maya has
+                                always
+                                made sure that team delivers.</p>
+
+                            <div>
+                                <h6 class=" text-white text-sm font-medium">Gianni Favaretto</h6>
+                                <p class=" text-gray-on-black text-xs">Director of Design & Research, Chargebee</p>
+                            </div>
                         </div>
+                        <!-- 1 -->
+
+
+                        <!-- 2 -->
+                        <div class="md:w-[75%]  space-y-7">
+
+
+                            <div class="w-16">
+                                <img src="https://placehold.co/50" class="rounded-full " alt="">
+                            </div>
+                            <p class=" text-gray-on-black text-sm italic">Maya took ownership of many key projects which
+                                were
+                                driven by
+                                design and made them into
+                                reality. She is a great collaborator and has leveraged her Research skills in many key
+                                projects. With Dheepak, Maya is his mentor and has helped him succeed in his everyday
+                                work.
+                                She has the trust of the team and stakeholders; With clear bandwidth issues, Maya has
+                                always
+                                made sure that team delivers.</p>
+
+                            <div>
+                                <h6 class=" text-white text-sm font-medium">Gianni Favaretto</h6>
+                                <p class=" text-gray-on-black text-xs">Director of Design & Research, Chargebee</p>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+
+
+
                     </div>
+
                 </div>
                 <div>
                     <img src="./images//hi-f5.png" alt="">
@@ -220,9 +270,20 @@
     <div id="footerDiv"></div>
 
     <script src="./owl/jquery.js"></script>
+    <script src="./owl/owl.carousel.min.js"></script>
     <script src="./js/app.js"></script>
 
 
+    <script>
+        $(".owl-testimonial").owlCarousel({
+            items: 1,
+            dots: true,
+            autoplay: false,
+            autoplayTimeout: 10000,
+            loop: true,
+
+        });
+    </script>
 
 </body>
 

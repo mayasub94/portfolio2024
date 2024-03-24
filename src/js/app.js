@@ -1,10 +1,11 @@
 $(function () {
   var mainNavigation = `<div class="  flex  justify-between items-center">
     <div><a href="./"><img src="./images/Logo.svg" alt=""></a></div>
-    <ul class="flex text-gray-on-black text-base gap-x-5 font-light">
-        <li><a href="./work.html">Work</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+    <ul class="flex text-gray-on-black text-base gap-x-5 font-light menu">
+        <li class="menu-work"><a href="./index.html#work">Work</a></li>
+        <li class="menu-about"><a href="./about.html">About</a></li>
+        <li class="menu-contact"><a href="./contact.html">Contact</a></li>
+        <li class="t"><a href="maya-resume.pdf" target="_blank">Resume</a></li>
     </ul>
 </div>`;
 
@@ -13,11 +14,11 @@ $(function () {
   <div class="py-8 space-y-6">
 
       <div class="flex justify-center items-center gap-x-2 text-gray-on-bg text-sm item-middle">
-          <button type="button"
+          <button type="button" id="scrollToTopBtn"
               class="rounded-md bg-primary-dark px-2.5 py-1.5 text-sm text-white shadow-sm hover:bg-white/5">Back
               to the top</button>
           •
-          <a href="./work.html" type="button"
+          <a href="./index.html#work" type="button"
               class="rounded-md bg-primary-dark px-2.5 py-1.5 text-sm  text-white shadow-sm hover:bg-white/5">Work</a>
           •
           <a href="./about.html" type="button"
@@ -40,4 +41,28 @@ $(function () {
   $("#footerDiv").html(footer);
 
   $("#mainNav").html(mainNavigation);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("scrollToTopBtn")
+    .addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage = window.location.pathname.split("/").pop();
+  const menuMap = {
+    "work.html": "menu-work",
+    "about.html": "menu-about",
+    "contact.html": "menu-contact",
+  };
+  const activeMenuClass = menuMap[currentPage];
+  if (activeMenuClass) {
+    document.querySelector("." + activeMenuClass).classList.add("active");
+  }
 });

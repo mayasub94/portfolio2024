@@ -84,14 +84,82 @@
                         </ul>
                     </div>
                 </div>
-                <div class=" bg-m-orange bg-opacity-15 flex items-center py-4 px-4 rounded">
-                    <p class=" font-semibold text-gray-on-text">See detailed journeys</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                        <path fill-rule="evenodd"
-                            d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
-                            clip-rule="evenodd" />
-                    </svg>
+                <div class="bg-m-orange bg-opacity-15" x-data="{ open: false }">
+                    <div @click="open = !open"
+                        class=" bg-m-orange bg-opacity-15 flex items-center gap-x-2 py-4 px-4 rounded cursor-pointer">
+                        <p class=" font-semibold text-gray-on-text">See detailed journeys</p>
+                        <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                        </svg>
 
+
+                        <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+
+                    </div>
+
+                    <!-- open -->
+                    <div class="bg-m-orange bg-opacity-15 p-4 space-y-10" x-show="open">
+                        <div class="space-y-4">
+                            <div class="font-semibold text-gray-on-text text-xl">New Startup business</div>
+                            <div class="flex justify-between">
+                                <div class="bg-white w-1/2">
+                                    <img src="https://placehold.co/200" alt="">
+                                </div>
+                                <div class=" w-1/3">
+                                    <div class="bg-m-orange bg-opacity-15 p-4 italic text-sm">
+
+                                        I think what confused me a bit was the difference between plan and subscription
+                                        in
+                                        the beginning. To me they kind of sound like the same thing. Now of course it
+                                        makes
+                                        sense that subscription is kind of like an instance of a plan more or less
+                                    </div>
+                                </div>
+                            </div>
+                            <p>For a new startup business, the primary focus is the Creation. Helping them understand
+                                Chargebee to build confidence to create customers.</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="font-semibold text-gray-on-text text-xl">Growth Stage Users</div>
+
+                            <p>For a new startup business, the primary focus is the Creation. Helping them understand
+                                Chargebee to build confidence to create customers.</p>
+
+                            <div class="bg-white p-4">
+                                <img src="https://placehold.co/200" alt="">
+                            </div>
+
+                            <div class="bg-white p-4">
+                                <img src="https://placehold.co/200" alt="">
+                            </div>
+
+                            <div class="bg-white p-4">
+                                <img src="https://placehold.co/200" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="space-y-4">
+                            <div class="font-semibold text-gray-on-text text-xl">Growth Stage Users</div>
+
+
+
+                            <div class="bg-white p-4">
+                                <img src="https://placehold.co/200" alt="">
+                            </div>
+
+                            <p>For a new startup business, the primary focus is the Creation. Helping them understand
+                                Chargebee to build confidence to create customers.</p>
+                        </div>
+
+                    </div>
+                    <!-- open -->
                 </div>
             </div>
 
@@ -100,7 +168,7 @@
     </div>
 
     <!-- section-3 -->
-    <div class="bg-m-orange bg-opacity-15">
+    <div class="bg-m-orange bg-opacity-15" x-data="{ open: false }">
         <div class="b-container space-y-32">
             <div class="">
                 <div class=" space-y-8">
@@ -421,7 +489,7 @@
     <script src="./owl/jquery.js"></script>
     <script src="./owl/owl.carousel.min.js"></script>
     <script src="./js/app.js"></script>
-
+    <script src="//unpkg.com/alpinejs" defer></script>
 
     <script>
 

@@ -153,3 +153,21 @@ h5 {
     }
   }
 }
+
+.owl-testimonial {
+  .owl-dots {
+    @apply space-x-3 m-auto text-left;
+    .owl-dot {
+      @apply h-3 w-3 bg-gray-on-bg rounded-full hover:bg-m-orange;
+    }
+    .active {
+      @apply bg-m-orange;
+    }
+  }
+}
+
+.menu {
+  .active {
+    @apply text-m-orange;
+  }
+}

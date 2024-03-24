@@ -608,6 +608,16 @@ video {
   margin: auto;
 }
 
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .block{
   display: block;
 }
@@ -656,10 +666,6 @@ video {
   display: none;
 }
 
-.h-16{
-  height: 4rem;
-}
-
 .h-24{
   height: 6rem;
 }
@@ -692,6 +698,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-3{
+  min-height: 0.75rem;
+}
+
 .w-1\/3{
   width: 33.333333%;
 }
@@ -714,6 +724,18 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-3{
+  width: 0.75rem;
+}
+
+.w-1\/2{
+  width: 50%;
 }
 
 .grow{
@@ -1014,6 +1036,14 @@ video {
   padding: 1.5rem;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
 .\!py-8{
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
@@ -1145,6 +1175,11 @@ video {
   line-height: 1rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1234,6 +1269,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-on-bg-black{
+  --tw-text-opacity: 1;
+  color: rgb(240 240 240 / var(--tw-text-opacity));
 }
 
 .opacity-40{
@@ -1714,6 +1754,50 @@ h5{
       --tw-bg-opacity: 1;
       background-color: rgb(23 23 23 / var(--tw-bg-opacity));
     }
+  }
+}
+
+.owl-testimonial {
+  .owl-dots{
+    margin: auto;
+  }
+  .owl-dots > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+  .owl-dots{
+    text-align: left;
+  }
+  .owl-dots {
+    .owl-dot{
+      height: 0.75rem;
+    }
+    .owl-dot{
+      width: 0.75rem;
+    }
+    .owl-dot{
+      border-radius: 9999px;
+    }
+    .owl-dot{
+      --tw-bg-opacity: 1;
+      background-color: rgb(240 240 240 / var(--tw-bg-opacity));
+    }
+    .owl-dot:hover{
+      --tw-bg-opacity: 1;
+      background-color: rgb(223 164 92 / var(--tw-bg-opacity));
+    }
+    .active{
+      --tw-bg-opacity: 1;
+      background-color: rgb(223 164 92 / var(--tw-bg-opacity));
+    }
+  }
+}
+
+.menu {
+  .active{
+    --tw-text-opacity: 1;
+    color: rgb(223 164 92 / var(--tw-text-opacity));
   }
 }
 

@@ -123,6 +123,13 @@ h5 {
 }
 
 .owl-work-1 {
+  .owl-prev {
+    @apply !bg-m-orange !bg-opacity-25 !border-m-orange absolute top-1/2 w-10 h-10 -left-16;
+  }
+
+  .owl-next {
+    @apply  !bg-m-orange !bg-opacity-25 !border-m-orange absolute top-1/2 w-10 h-10 -right-16;
+  }
   .owl-dots {
     @apply space-x-3 m-auto text-center;
     .owl-dot {

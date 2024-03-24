@@ -1,5 +1,5 @@
 $(function () {
-  var mainNavigation = `<div class="  flex  justify-between items-center">
+  var mainNavigation = `<div class="  flex md:flex-row flex-col gap-3   justify-between items-center">
     <div><a href="./"><img src="./images/Logo.svg" alt=""></a></div>
     <ul class="flex text-gray-on-black text-base gap-x-5 font-light menu">
         <li class="menu-work"><a href="./index.html#work">Work</a></li>

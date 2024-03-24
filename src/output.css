@@ -604,6 +604,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-8{
+  bottom: 2rem;
+}
+
 .m-auto{
   margin: auto;
 }
@@ -714,6 +718,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .grow{

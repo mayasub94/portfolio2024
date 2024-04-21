@@ -729,10 +729,6 @@ video {
   width: 66.666667%;
 }
 
-.w-3{
-  width: 0.75rem;
-}
-
 .w-4{
   width: 1rem;
 }
@@ -1452,7 +1448,7 @@ h6{
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -1917,9 +1913,9 @@ h6{
 }
 
 .scroll {
-  width: 60px;
-  height: 60px;
-  border: 2px solid #6E6E6E;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #6E6E6E;
   border-radius: 50%;
   position: relative;
   animation: down 1.5s infinite;
@@ -1927,12 +1923,12 @@ h6{
   &::before {
     content: '';
     position: absolute;
-    top: 15px;
-    left: 18px;
-    width: 18px;
-    height: 18px;
-    border-left: 2px solid #6E6E6E;
-    border-bottom: 2px solid #6E6E6E;
+    top: 10px;
+    left: 13px;
+    width: 12px;
+    height: 12px;
+    border-left: 1px solid #6E6E6E;
+    border-bottom: 1px solid #6E6E6E;
     transform: rotate(-45deg);
   }
 }
@@ -2029,6 +2025,12 @@ h6{
     flex: none;
   }
 
+  .md\:scale-90{
+    --tw-scale-x: .9;
+    --tw-scale-y: .9;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2095,3 +2097,4 @@ h6{
     text-align: left;
   }
 }
+

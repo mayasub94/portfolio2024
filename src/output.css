@@ -1428,8 +1428,8 @@ h6{
 
 @media (min-width: 768px){
   .w-container{
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 

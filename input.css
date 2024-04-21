@@ -38,6 +38,10 @@ h6 {
 }
 
 .b-container {
+  @apply  max-w-5xl mx-auto py-16 px-8 md:px-0 md:py-24 text-gray-on-text;
+}
+
+.h-container {
   @apply  max-w-5xl mx-auto py-16 px-8 md:px-0 md:pt-24 md:pb-8 text-gray-on-text;
 }
 

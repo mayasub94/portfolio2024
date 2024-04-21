@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maya</title>
+    <title>PLG</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="./owl/owl.carousel.min.css">
     <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
@@ -531,15 +533,8 @@
                 </div>
             </div>
 
-        </div>
-        <div id="errorMessage" class="space-y-6 py-8">
-            <p class="text-lg text-red-700 text-center">Incorrect password. Please try again.</p>
-            <div class=" text-center">
-                <button class=" bg-primary-dark px-6 py-2 rounded  text-lg text-gray-on-black " type="button"
-                    id="reenter" onclick="location.reload();">Re-Enter</button>
-            </div>
-        </div>
-        <!-- section-9 -->
+
+            <!-- section-9 -->
         <div class="b-container space-y-8">
             <h3 class=" ">Other works</h3>
             <div class=" grid md:grid-cols-2 grid-cols-1 gap-12">
@@ -597,6 +592,32 @@
             </div>
         </div>
 
+
+        </div>
+        <div id="errorMessage" class="space-y-6 py-8">
+            <p class="text-lg text-red-700 text-center">Incorrect password. Please try again.</p>
+            <div class=" text-center">
+                <button class=" bg-primary-dark px-6 py-2 rounded  text-lg text-gray-on-black " type="button"
+                    id="reenter" onclick="location.reload();">Re-Enter</button>
+            </div>
+        </div>
+
+
+        <!-- sample -->
+        <div class=" h-screen" id="passwordScreen">
+
+            <div class="text-center py-10">
+                <svg class="mx-auto h-12 w-12 text-gray-on-text" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+                  </svg>
+                  
+                <h3 class="mt-2 text-sm font-semibold text-primary-dark">Password Protected</h3>
+                <p class="mt-1 text-sm text-gray-on-text">Please enter the password to access this page. ⬆ </p>
+              </div>
+
+
+        </div>
+        
         <!-- footer -->
         <div id="footerDiv"></div>
 
@@ -613,6 +634,8 @@
 
     <script>
 
+        document.getElementById("passwordScreen").style.display = "block";
+
         const correctPassword = "password"; // Set your password here
 
         function checkPassword() {
@@ -620,10 +643,14 @@
             if (userPassword === correctPassword) {
                 // Correct password: show the page content
                 document.getElementById("pageContent").style.display = "block";
+                document.getElementById("passwordScreen").style.display = "none";
+              
+                
 
             } else {
                 // Incorrect password: show an error message
                 document.getElementById("errorMessage").style.display = "block";
+                
 
             }
         }
@@ -639,6 +666,8 @@
             autoplay: false,
             autoplayTimeout: 10000,
             loop: true,
+            nav: true,
+            navText: ["<i class='fa fa-chevron-left text-black'></i>", "<i class='fa fa-chevron-right text-black'></i>"]
 
         });
     </script>

@@ -5,7 +5,7 @@ $(function () {
         <li class="menu-work"><a href="./index.html#work">Work</a></li>
         <li class="menu-about"><a href="./about.html">About</a></li>
         <li class="menu-contact"><a href="./contact.html">Contact</a></li>
-        <li class="t"><a href="maya-resume.pdf" target="_blank">Resume</a></li>
+        <li class="t"><a href="Maya_Subramanian-Resume.pdf" target="_blank">Resume</a></li>
     </ul>
 </div>`;
 

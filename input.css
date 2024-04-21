@@ -29,16 +29,20 @@ h5 {
   @apply font-semibold text-xl leading-6 text-primary-dark;
 }
 
+h6 {
+  @apply text-xl text-primary-dark;
+}
+
 .w-container {
   @apply max-w-7xl mx-auto py-8 text-gray-on-text px-8 md:px-0;
 }
 
 .b-container {
-  @apply max-w-5xl mx-auto py-16 px-8 md:px-0 md:py-32 text-gray-on-text;
+  @apply  max-w-5xl mx-auto py-16 px-8 md:px-0 md:py-24 text-gray-on-text;
 }
 
 .banner-list-text li {
-  @apply text-white flex items-center gap-x-2;
+  @apply text-white font-semibold text-xl flex items-center gap-x-2;
 }
 
 .banner {
@@ -143,11 +147,11 @@ h5 {
 
 .owl-reels {
   .owl-prev {
-    @apply !bg-black absolute top-1/2 w-10 h-10 left-2;
+    @apply !bg-black absolute z-50 top-1/2 w-10 h-10 left-2;
   }
 
   .owl-next {
-    @apply !bg-black absolute top-1/2 w-10 h-10 right-2;
+    @apply !bg-black absolute z-50 top-1/2 w-10 h-10 right-2;
   }
 
   .owl-dots {
@@ -181,4 +185,49 @@ h5 {
 #pageContent,
 #errorMessage {
   display: none;
+}
+
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #6E6E6E;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #6E6E6E;
+  	border-bottom: 2px solid #6E6E6E;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
 }

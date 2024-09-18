@@ -46,13 +46,13 @@ h6 {
 }
 
 .banner-list-text li {
-  @apply text-white font-semibold text-xl flex items-center gap-x-2;
+  @apply flex items-center gap-x-2;
 }
 
 .banner {
   @apply md:flex flex-col md:w-1/2 space-y-8;
   & p {
-    @apply text-sm text-gray-on-black;
+    @apply  text-gray-on-black;
   }
 }
 
